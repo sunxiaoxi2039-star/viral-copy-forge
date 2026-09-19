@@ -1,0 +1,2437 @@
+[
+ {
+  "platform": "xiaohongshu",
+  "collected_at": "2026-09-19",
+  "queries": [
+   "防脱洗发水",
+   "防脱洗发水推荐",
+   "达霏欣",
+   "米诺地尔洗发水"
+  ],
+  "sample": 50,
+  "dropped": 33,
+  "undated": 0,
+  "median": 148.0,
+  "boom_line": 444.0,
+  "cap": 1480.0,
+  "booms": 16,
+  "level": "实测级",
+  "date_range": [
+   "2026-06-28",
+   "2026-09-19"
+  ],
+  "tags": [
+   {
+    "tag": "#防脱洗发水",
+    "sample": 15,
+    "booms": 8,
+    "total": 7641,
+    "share": 0.194,
+    "last_seen": "2026-09-19",
+    "tier": "实证",
+    "blocked_by": [],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#达霏欣防脱洗发水",
+    "sample": 9,
+    "booms": 7,
+    "total": 7452,
+    "share": 0.199,
+    "last_seen": "2026-09-15",
+    "tier": "实证",
+    "blocked_by": [],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "达霏欣洗护发全球品牌代言人明天见！",
+      "likes": 1759,
+      "url": "https://www.xiaohongshu.com/explore/6aa90d68000000002b0139a9",
+      "published_at": "2026-09-15"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     }
+    ]
+   },
+   {
+    "tag": "#达霏欣",
+    "sample": 8,
+    "booms": 6,
+    "total": 6877,
+    "share": 0.215,
+    "last_seen": "2026-09-15",
+    "tier": "实证",
+    "blocked_by": [],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "达霏欣洗护发全球品牌代言人明天见！",
+      "likes": 1759,
+      "url": "https://www.xiaohongshu.com/explore/6aa90d68000000002b0139a9",
+      "published_at": "2026-09-15"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水推荐",
+    "sample": 10,
+    "booms": 6,
+    "total": 6210,
+    "share": 0.238,
+    "last_seen": "2026-09-10",
+    "tier": "实证",
+    "blocked_by": [],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#达霏欣洗发水",
+    "sample": 6,
+    "booms": 5,
+    "total": 5397,
+    "share": 0.274,
+    "last_seen": "2026-08-25",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 6 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水控油",
+    "sample": 6,
+    "booms": 5,
+    "total": 5397,
+    "share": 0.274,
+    "last_seen": "2026-08-25",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 6 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#脱发",
+    "sample": 6,
+    "booms": 3,
+    "total": 3602,
+    "share": 0.411,
+    "last_seen": "2026-09-12",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 6 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水",
+    "sample": 7,
+    "booms": 3,
+    "total": 3602,
+    "share": 0.411,
+    "last_seen": "2026-09-18",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 7 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     },
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#养发",
+    "sample": 7,
+    "booms": 3,
+    "total": 3382,
+    "share": 0.438,
+    "last_seen": "2026-08-23",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 7 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#护发养发",
+    "sample": 5,
+    "booms": 3,
+    "total": 2935,
+    "share": 0.504,
+    "last_seen": "2026-09-16",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 5 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     },
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#促进头发生长",
+    "sample": 7,
+    "booms": 2,
+    "total": 2740,
+    "share": 0.54,
+    "last_seen": "2026-09-04",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 7 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#科普",
+    "sample": 2,
+    "booms": 2,
+    "total": 2740,
+    "share": 0.54,
+    "last_seen": "2026-08-23",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#听医生的真心话",
+    "sample": 2,
+    "booms": 2,
+    "total": 2740,
+    "share": 0.54,
+    "last_seen": "2026-09-12",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     },
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#护发cp",
+    "sample": 2,
+    "booms": 2,
+    "total": 2618,
+    "share": 0.565,
+    "last_seen": "2026-08-19",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "发量多到“嚣张”是什么体验？",
+      "likes": 2231,
+      "url": "https://www.xiaohongshu.com/explore/6a64b378000000000103075e",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#好物分享",
+    "sample": 4,
+    "booms": 2,
+    "total": 2618,
+    "share": 0.565,
+    "last_seen": "2026-08-25",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 4 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     },
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#护发",
+    "sample": 3,
+    "booms": 2,
+    "total": 2122,
+    "share": 0.697,
+    "last_seen": "2026-09-19",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#发质",
+    "sample": 2,
+    "booms": 2,
+    "total": 2122,
+    "share": 0.697,
+    "last_seen": "2026-09-16",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#头发",
+    "sample": 3,
+    "booms": 2,
+    "total": 1902,
+    "share": 0.662,
+    "last_seen": "2026-09-01",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#养发护发",
+    "sample": 4,
+    "booms": 2,
+    "total": 1902,
+    "share": 0.662,
+    "last_seen": "2026-09-10",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 4 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#头皮精华",
+    "sample": 3,
+    "booms": 2,
+    "total": 1780,
+    "share": 0.639,
+    "last_seen": "2026-08-23",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     },
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#防脱",
+    "sample": 5,
+    "booms": 2,
+    "total": 1485,
+    "share": 0.547,
+    "last_seen": "2026-09-18",
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 5 条 < 8 条"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     },
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#我的健康生活",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-07-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     }
+    ]
+   },
+   {
+    "tag": "#健康养生",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-07-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     }
+    ]
+   },
+   {
+    "tag": "#健康科普",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-07-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     }
+    ]
+   },
+   {
+    "tag": "#头发蹭蹭长",
+    "sample": 4,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-04",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 4 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     }
+    ]
+   },
+   {
+    "tag": "#科学的力量",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-07-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "伯格医生分享让头发疯长的3个配方",
+      "likes": 5076,
+      "url": "https://www.xiaohongshu.com/explore/6a641fb2000000000a038cf8",
+      "published_at": "2026-07-25"
+     }
+    ]
+   },
+   {
+    "tag": "#寻找美护新玩家",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#朱旺旺",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#细软塌",
+    "sample": 2,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#油头",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#烫染受损",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#头皮屑",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#秃头",
+    "sample": 3,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-16",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "精细化分类❗️我看看谁还不会挑洗发水！！",
+      "likes": 2275,
+      "url": "https://www.xiaohongshu.com/explore/6aaa51cf00000000260163cb",
+      "published_at": "2026-09-16"
+     }
+    ]
+   },
+   {
+    "tag": "#惊喜",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-11",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "压根儿没期待🥲反而被惊艳！",
+      "likes": 1790,
+      "url": "https://www.xiaohongshu.com/explore/6aa36d8c000000000d024ef3",
+      "published_at": "2026-09-11"
+     }
+    ]
+   },
+   {
+    "tag": "#确实值得一提",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-11",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "压根儿没期待🥲反而被惊艳！",
+      "likes": 1790,
+      "url": "https://www.xiaohongshu.com/explore/6aa36d8c000000000d024ef3",
+      "published_at": "2026-09-11"
+     }
+    ]
+   },
+   {
+    "tag": "#有被惊艳到",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-11",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "压根儿没期待🥲反而被惊艳！",
+      "likes": 1790,
+      "url": "https://www.xiaohongshu.com/explore/6aa36d8c000000000d024ef3",
+      "published_at": "2026-09-11"
+     }
+    ]
+   },
+   {
+    "tag": "#爱不释手",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-11",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "压根儿没期待🥲反而被惊艳！",
+      "likes": 1790,
+      "url": "https://www.xiaohongshu.com/explore/6aa36d8c000000000d024ef3",
+      "published_at": "2026-09-11"
+     }
+    ]
+   },
+   {
+    "tag": "#好物推荐",
+    "sample": 3,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-11",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "压根儿没期待🥲反而被惊艳！",
+      "likes": 1790,
+      "url": "https://www.xiaohongshu.com/explore/6aa36d8c000000000d024ef3",
+      "published_at": "2026-09-11"
+     }
+    ]
+   },
+   {
+    "tag": "#达霏欣防脱实力派",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-15",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "达霏欣洗护发全球品牌代言人明天见！",
+      "likes": 1759,
+      "url": "https://www.xiaohongshu.com/explore/6aa90d68000000002b0139a9",
+      "published_at": "2026-09-15"
+     }
+    ]
+   },
+   {
+    "tag": "#达霏欣专研毛发",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-15",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "达霏欣洗护发全球品牌代言人明天见！",
+      "likes": 1759,
+      "url": "https://www.xiaohongshu.com/explore/6aa90d68000000002b0139a9",
+      "published_at": "2026-09-15"
+     }
+    ]
+   },
+   {
+    "tag": "#内服外养",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-07-26",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "当我终于知道：养发和养花是一个道理！",
+      "likes": 1514,
+      "url": "https://www.xiaohongshu.com/explore/6a65b3dc000000000503a649",
+      "published_at": "2026-07-26"
+     }
+    ]
+   },
+   {
+    "tag": "#二硫化硒",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#二硫化硒洗剂",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#头痒头屑",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水夯拉榜",
+    "sample": 2,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#健康科普howto",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#医生科普",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#毛发医生姜文彬",
+    "sample": 1,
+    "booms": 1,
+    "total": 1480,
+    "share": 1.0,
+    "last_seen": "2026-09-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "二硫化硒，会越用越秃？",
+      "likes": 1484,
+      "url": "https://www.xiaohongshu.com/explore/6aa5323a000000002803afb9",
+      "published_at": "2026-09-12"
+     }
+    ]
+   },
+   {
+    "tag": "#头皮",
+    "sample": 1,
+    "booms": 1,
+    "total": 1260,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#脱发掉发",
+    "sample": 1,
+    "booms": 1,
+    "total": 1260,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#雄脱",
+    "sample": 1,
+    "booms": 1,
+    "total": 1260,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#休止期脱发",
+    "sample": 1,
+    "booms": 1,
+    "total": 1260,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "为什么米诺只长绒毛❔",
+      "likes": 1260,
+      "url": "https://www.xiaohongshu.com/explore/6a8ac72b00000000330294a7",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#职场护发",
+    "sample": 1,
+    "booms": 1,
+    "total": 1138,
+    "share": 1.0,
+    "last_seen": "2026-08-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#熬夜掉发",
+    "sample": 2,
+    "booms": 1,
+    "total": 1138,
+    "share": 1.0,
+    "last_seen": "2026-09-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#头皮护理",
+    "sample": 3,
+    "booms": 1,
+    "total": 1138,
+    "share": 1.0,
+    "last_seen": "2026-09-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#养发精华",
+    "sample": 1,
+    "booms": 1,
+    "total": 1138,
+    "share": 1.0,
+    "last_seen": "2026-08-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "30+职场人严选，人生级别防脱洗发水已定型！",
+      "likes": 1138,
+      "url": "https://www.xiaohongshu.com/explore/6a852712000000000502a154",
+      "published_at": "2026-08-19"
+     }
+    ]
+   },
+   {
+    "tag": "#掉头发",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#掉发脱发",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#油性头皮",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#干性头皮",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水怎么选",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#减少掉发",
+    "sample": 1,
+    "booms": 1,
+    "total": 813,
+    "share": 1.0,
+    "last_seen": "2026-08-08",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发别乱买！真正能改善脱发的洗发水合集 正",
+      "likes": 813,
+      "url": "https://www.xiaohongshu.com/explore/6a76bfe8000000000502868f",
+      "published_at": "2026-08-08"
+     }
+    ]
+   },
+   {
+    "tag": "#头发掉发严重",
+    "sample": 1,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-08-28",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#防脱精华",
+    "sample": 3,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-09-18",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#女性脱发",
+    "sample": 1,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-08-28",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#offrelax防脱洗发水",
+    "sample": 1,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-08-28",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#offrelax全龄全型全链防脱",
+    "sample": 1,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-08-28",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#offrelax防脱",
+    "sample": 1,
+    "booms": 1,
+    "total": 759,
+    "share": 1.0,
+    "last_seen": "2026-08-28",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "米诺是防脱唯一解法吗？",
+      "likes": 759,
+      "url": "https://www.xiaohongshu.com/explore/6a913f33000000002c03dc49",
+      "published_at": "2026-08-28"
+     }
+    ]
+   },
+   {
+    "tag": "#山姆",
+    "sample": 1,
+    "booms": 1,
+    "total": 672,
+    "share": 1.0,
+    "last_seen": "2026-07-13",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#馥绿德雅白珠洗发水",
+    "sample": 1,
+    "booms": 1,
+    "total": 672,
+    "share": 1.0,
+    "last_seen": "2026-07-13",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#馥绿德雅防脱洗发水",
+    "sample": 1,
+    "booms": 1,
+    "total": 672,
+    "share": 1.0,
+    "last_seen": "2026-07-13",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#山姆好物",
+    "sample": 3,
+    "booms": 1,
+    "total": 672,
+    "share": 1.0,
+    "last_seen": "2026-08-12",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#山姆买什么",
+    "sample": 1,
+    "booms": 1,
+    "total": 672,
+    "share": 1.0,
+    "last_seen": "2026-07-13",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "掉发严重的都去山姆买这个！！！",
+      "likes": 672,
+      "url": "https://www.xiaohongshu.com/explore/6a5498540000000022015935",
+      "published_at": "2026-07-13"
+     }
+    ]
+   },
+   {
+    "tag": "#深圳打工",
+    "sample": 1,
+    "booms": 1,
+    "total": 657,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "嫉妒心让我一条广告赚3000块",
+      "likes": 657,
+      "url": "https://www.xiaohongshu.com/explore/6a8d0b720000000028008dfe",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#女性成长",
+    "sample": 1,
+    "booms": 1,
+    "total": 657,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "嫉妒心让我一条广告赚3000块",
+      "likes": 657,
+      "url": "https://www.xiaohongshu.com/explore/6a8d0b720000000028008dfe",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#职场人",
+    "sample": 1,
+    "booms": 1,
+    "total": 657,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "嫉妒心让我一条广告赚3000块",
+      "likes": 657,
+      "url": "https://www.xiaohongshu.com/explore/6a8d0b720000000028008dfe",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#深圳外企",
+    "sample": 1,
+    "booms": 1,
+    "total": 657,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "嫉妒心让我一条广告赚3000块",
+      "likes": 657,
+      "url": "https://www.xiaohongshu.com/explore/6a8d0b720000000028008dfe",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#girlstalk",
+    "sample": 1,
+    "booms": 1,
+    "total": 657,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "嫉妒心让我一条广告赚3000块",
+      "likes": 657,
+      "url": "https://www.xiaohongshu.com/explore/6a8d0b720000000028008dfe",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#发量",
+    "sample": 3,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-09-19",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#头发护理",
+    "sample": 2,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#护发养发头发护理",
+    "sample": 2,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#养发好物",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#养发心得",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#女生必看",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#绸缎发",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#养发护发有效方法",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#内调养发",
+    "sample": 1,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-08-23",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#掉发",
+    "sample": 3,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-09-18",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#发缝",
+    "sample": 5,
+    "booms": 1,
+    "total": 642,
+    "share": 1.0,
+    "last_seen": "2026-09-09",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 5 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "4年养发人｜3个养发核心干货方法（自用版",
+      "likes": 642,
+      "url": "https://www.xiaohongshu.com/explore/6a8ab8fc000000002a02d8ea",
+      "published_at": "2026-08-23"
+     }
+    ]
+   },
+   {
+    "tag": "#创意广告",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#广告创意",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#搞笑",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#好视频扶持计划",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#小红书最佳向导",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#ai工具",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#快乐瞬间",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#人生就是一场体验",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   },
+   {
+    "tag": "#地球online",
+    "sample": 1,
+    "booms": 1,
+    "total": 575,
+    "share": 1.0,
+    "last_seen": "2026-08-25",
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 8 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "我去 不早说",
+      "likes": 575,
+      "url": "https://www.xiaohongshu.com/explore/6a8d5def000000003302ad23",
+      "published_at": "2026-08-25"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "platform": "douyin",
+  "collected_at": "2026-09-19",
+  "queries": [
+   "防脱洗发水"
+  ],
+  "sample": 20,
+  "dropped": 0,
+  "undated": 20,
+  "median": 20500.0,
+  "boom_line": 61500.0,
+  "cap": 205000.0,
+  "booms": 3,
+  "level": "观察级",
+  "date_range": null,
+  "tags": [
+   {
+    "tag": "#达霏欣防脱洗发水",
+    "sample": 4,
+    "booms": 2,
+    "total": 301000,
+    "share": 0.681,
+    "last_seen": null,
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 4 条 < 5 条"
+    ],
+    "evidence": [
+     {
+      "title": "我去，不早说  #达霏欣防脱洗发水  #把你头Peng了！",
+      "likes": 1797000,
+      "url": "https://www.douyin.com/video/7648902455816202853",
+      "published_at": null
+     },
+     {
+      "title": "自然原生植愈力，给头发温柔的答案#AIGC#达霏欣防脱洗发水#把你头Peng了",
+      "likes": 96000,
+      "url": "https://www.douyin.com/video/7633666308638395684",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#把你头peng了",
+    "sample": 3,
+    "booms": 2,
+    "total": 301000,
+    "share": 0.681,
+    "last_seen": null,
+    "tier": "实证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 5 条"
+    ],
+    "evidence": [
+     {
+      "title": "我去，不早说  #达霏欣防脱洗发水  #把你头Peng了！",
+      "likes": 1797000,
+      "url": "https://www.douyin.com/video/7648902455816202853",
+      "published_at": null
+     },
+     {
+      "title": "自然原生植愈力，给头发温柔的答案#AIGC#达霏欣防脱洗发水#把你头Peng了",
+      "likes": 96000,
+      "url": "https://www.douyin.com/video/7633666308638395684",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#aigc",
+    "sample": 2,
+    "booms": 1,
+    "total": 96000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "自然原生植愈力，给头发温柔的答案#AIGC#达霏欣防脱洗发水#把你头Peng了",
+      "likes": 96000,
+      "url": "https://www.douyin.com/video/7633666308638395684",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#防脱洗发水",
+    "sample": 3,
+    "booms": 1,
+    "total": 63000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 3 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "60位志愿者实测3个月，防脱到底哪家强？ #防脱洗发水 #评测 #脱发 #老爸评测 #洗发水推荐",
+      "likes": 63000,
+      "url": "https://www.douyin.com/video/7502423487639194891",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#脱发",
+    "sample": 2,
+    "booms": 1,
+    "total": 63000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 2 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "60位志愿者实测3个月，防脱到底哪家强？ #防脱洗发水 #评测 #脱发 #老爸评测 #洗发水推荐",
+      "likes": 63000,
+      "url": "https://www.douyin.com/video/7502423487639194891",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#评测",
+    "sample": 1,
+    "booms": 1,
+    "total": 63000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "60位志愿者实测3个月，防脱到底哪家强？ #防脱洗发水 #评测 #脱发 #老爸评测 #洗发水推荐",
+      "likes": 63000,
+      "url": "https://www.douyin.com/video/7502423487639194891",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#老爸评测",
+    "sample": 1,
+    "booms": 1,
+    "total": 63000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "60位志愿者实测3个月，防脱到底哪家强？ #防脱洗发水 #评测 #脱发 #老爸评测 #洗发水推荐",
+      "likes": 63000,
+      "url": "https://www.douyin.com/video/7502423487639194891",
+      "published_at": null
+     }
+    ]
+   },
+   {
+    "tag": "#洗发水推荐",
+    "sample": 1,
+    "booms": 1,
+    "total": 63000,
+    "share": 1.0,
+    "last_seen": null,
+    "tier": "孤证",
+    "blocked_by": [
+     "含该标签样本 1 条 < 5 条",
+     "单条贡献 100% > 70%：只借结构不借权重"
+    ],
+    "evidence": [
+     {
+      "title": "60位志愿者实测3个月，防脱到底哪家强？ #防脱洗发水 #评测 #脱发 #老爸评测 #洗发水推荐",
+      "likes": 63000,
+      "url": "https://www.douyin.com/video/7502423487639194891",
+      "published_at": null
+     }
+    ]
+   }
+  ]
+ }
+]
