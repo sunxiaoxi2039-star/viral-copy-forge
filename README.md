@@ -8,9 +8,9 @@
 
 **这是干什么的**：你给一个产品名 + 竞品名，它去小红书和抖音把这个品类今天真的在火的标题、标签、句式扒下来，按累计点赞排序，再拆竞品的记忆点（成分昵称、使用仪式、人群细分），最后把两样东西揉进一条新文案里——生成时要求每条标题挂上所用标签和来源笔记的大致赞数；开源版默认不强制校验，装上后请自己点开核对。
 
-**跟同类有什么不一样**：对照读过的公开营销 skill——[viral-note-agent-skill](https://github.com/xuboboo/xiaohongshu-viral-note-agent-skill)（闭环完整：选题、生成、合规门禁、发布、复盘都有）、[All-IN-ONE](https://github.com/cv-cat/All-IN-ONE)（对照过的项目里，明确把抖音采集做进主流程的一个）——结论很实在：**它们的热度证据只来自一个平台，或者只采集不拆解竞品**。在我们对照过的公开 skill 里，还没看到把「双平台标签点赞实证 + 竞品属性解剖 + 组合生成」接成一条龙的。这就是我们打磨这个 skill 的理由。
+**跟同类有什么不一样**：同类项目不少，做得也比我们全——[social-account-doctor](https://github.com/JuneYaooo/social-account-doctor)（小红书+抖音等五个平台，采集和爆款拆解都有）、[lingzao-skill](https://github.com/atian-create/lingzao-skill)（小红书+抖音+公众号，有对标账号和爆款拆解）、[viral-note-agent-skill](https://github.com/xuboboo/xiaohongshu-viral-note-agent-skill)（选题、生成、合规门禁、发布、复盘闭环）、[All-IN-ONE](https://github.com/cv-cat/All-IN-ONE)（多平台采集）、[都爆鸭](https://github.com/zizhanovo/doubaoya-community)（多平台爆文聚合）。我们只做窄的一件事：**按累计点赞给标签排火力，样本不够就自动降级、一条爆款不许带飞整张表**。在我们 2026-09-19 查过的公开项目里，没看到把这套样本闸门写明的。完整对照见 [docs/RESULTS.md](docs/RESULTS.md#竞品对照)。
 
-**效果数据**：同一产品、同一把评分尺（6 维）下，v1 对「不用 skill 的认真写法」均分 50:38（领先 +12/60），在独立盲评中对对照过的公开 skill 交付物取得全部六个维度领先——详见 [docs/RESULTS.md](docs/RESULTS.md)。
+**效果数据**：同一产品、同一把评分尺（6 维）下，v1 对「不用 skill 的认真写法」自测均分 50:38；一次 AI 单评委（Kimi）、单案例的匿名盲评里，v1 得 52/60，高于早期流水线（35）和无 skill 基线（23）。样本很小，详见 [docs/RESULTS.md](docs/RESULTS.md)。
 
 **怎么装**：见下面「安装」，3 步。
 
@@ -24,9 +24,9 @@
 
 **标题**：「医生说防脱洗发水是智商税？我把蔓迪按月打卡对比，结果……」
 
-**数据来源标签**：小红书约 9.7k 赞（某皮肤科医生笔记的背书句式：「发缝宽、发际线高」）／抖音约 189 万赞（「#把你头Peng了」反转钩子副话题；累计赞为话题下视频加总的代理指标）
+**数据来源标签**：小红书约 9.7k 赞（某皮肤科医生笔记的背书句式：「发缝宽、发际线高」）／抖音「#把你头Peng了」约 189 万累计赞——但约 95% 来自单条视频，按离群闸只借「反转钩子」句式，**不借权重**（观察级）
 
-跨平台交叉验证：小红书给了「医生背书」的信任装置，抖音给了「反转钩子」的开场句式——两个平台各自的顶层证据拼在一起，才是这条标题真正的底气。
+两个平台各出一样：小红书给「医生背书」的信任装置（实证），抖音只给开场句式（观察级）。这条标题的底气主要来自小红书那一半。
 
 ### 示范 2 · 卡诗头皮精华（原始弹药，未加工）
 
@@ -38,7 +38,7 @@
 
 ### 示范 3 · 姜小满头皮精华（虚拟品牌，组合生成成品）
 
-**标题**：「养发的尽头是一瓶会发热的姜精华｜28天打卡全记录（有图有真相）」
+**标题**：「养发的尽头是一瓶会发热的姜精华｜28天打卡全记录（每周同一角度拍发缝）」
 
 **数据来源标签**：小红书约 2.0k 赞（断言句式与成分昵称的结构复用——只借结构，不借品牌词与原句）+ 约400/约150 赞（day1→day28 连载仪式；个位数笔记的小样本，仅作仪式类标签示例）
 
@@ -71,7 +71,7 @@
 2. 确认 `SKILL.md` 在该文件夹根目录——加载器靠它的 `description` 决定什么时候自动装载，不用手动 `/load`。
 3. 在会读 `SKILL.md` 的环境（Claude Code 及兼容加载器）里，说一句「帮我写个爆款文案」或「给 XX 产品 tag 一下小红书热标签」，它会自己触发。
 
-> 抖音数据通道依赖你本机已登录的浏览器会话（浏览器调试桥一类），没有官方 API。首次用请看 `references/douyin.md` 里的边界说明——这条通道比小红书更「野」，别指望官方 API 般的稳定。
+> **采集工具要自备**：本仓只有流程和规则，不带任何采集脚本。小红书和抖音的数据都要靠你自己的采集工具（比如 [All-IN-ONE](https://github.com/cv-cat/All-IN-ONE) 或已登录的浏览器会话）喂进来，否则第②段会卡住。抖音没有官方 API，首次用请看 `references/douyin.md` 里的边界说明。
 
 ## What this is NOT
 
@@ -79,7 +79,7 @@
 - **不是投放/出价优化工具**——点赞是「这个标签曾经有人看」的代理指标，不等于你投出去的 CTR/CVR，钱要自己去投放台测。
 - **不是纯润色或纯翻译工具**——没有竞品数据和标签火力表介入的场景（比如你只是要把英文文案翻成中文），这个 skill 不该触发，用别的润色类 skill。
 - **不是学术写作或严肃文档助手**——它天生带营销腔和情绪钩子，写论文别找它。
-- **不保证防编造**——Claim Ledger（证据台账）v1 默认关，开源版本先信你自己会核实卖点合规性，别拿它当免责声明生成器。
+- **不保证防编造**——Claim Ledger（证据台账）只在功效、母婴、食品类强制开，其他品类默认关；开着也只是提醒你核对，别拿它当免责声明生成器。
 
 ## 三句丑话
 
@@ -99,4 +99,4 @@ viral-copy-forge contributors
 
 ## Acknowledgements
 
-技能文件格式参考了 [anthropics/skills](https://github.com/anthropics/skills) 的公开规范。对比分析所涉 [viral-note-agent-skill](https://github.com/xuboboo/xiaohongshu-viral-note-agent-skill)、[All-IN-ONE](https://github.com/cv-cat/All-IN-ONE) 等项目，均基于其公开文档与公开数据。
+技能文件格式参考了 [anthropics/skills](https://github.com/anthropics/skills) 的公开规范。六维热度权重和 12 类标题机制改编自 [viral-note-agent-skill](https://github.com/xuboboo/xiaohongshu-viral-note-agent-skill)（MIT），原版权声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。竞品对照基于各项目公开文档；viral-note-agent-skill 另做过一次本机实跑。
