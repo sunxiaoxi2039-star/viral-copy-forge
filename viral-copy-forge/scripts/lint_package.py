@@ -37,7 +37,7 @@ MANUAL = ["闸二 换品名死亡测试：品名换成竞品名后句子是否�
           "闸三 自评门四项打分，交付最高版",
           "闸四 洗稿判定：与竞品原文相似度",
           "人味终检 8 类 AI 腔逐条改写",
-          "来源可点：每个主标签指回火力表带赞来源"]
+          "来源可点：标签与句式确实指回火力表那几条（数字对不对已由 --fire-table 机器核）"]
 
 
 NEGATION = re.compile(r"(不|别|勿|非|禁|忌|避免|删除|改写|替换|规避)[^。；\n]{0,6}$")
@@ -61,6 +61,51 @@ def find(text, words):
         else:
             hard.append(w)
     return hard, negated_only
+
+
+REJECT_MARK = re.compile(r"(驳回|未核实|无证据|未备案|待补|无报告|查无|存疑)")
+QUOTED = re.compile(r"[「『\"“]([^」』\"”\n]{2,20})[」』\"”]")
+LIKES = re.compile(r"([0-9][0-9,\.]*)\s*(万)?\s*赞")
+PLACEHOLDER = re.compile(r"〔[^〕\n]*占位[^〕\n]*〕")
+TEACH_NOTE = "本例为教学示范"
+DEMO_NUMBERS = ["2,029", "1,779", "1,512", "9,725", "181.8", "417+150", "398"]  # 模板与参考册里的示范数字
+
+
+def rejected_claims(audit_text):
+    """从审计段里捞出被判「驳回／未核实／待补」的说法。
+
+    Claim Ledger 一行长这样：`| 5% 米诺地尔 | 客服口述 | 无备案 | 驳回 |`，
+    也可能写成「『械字号』未核实」。两种都抽：先看整行有没有驳回标记，
+    有就把行里被引号括起来的词、或表格首列，当成禁用说法。
+    """
+    out = []
+    for line in audit_text.splitlines():
+        if not REJECT_MARK.search(line):
+            continue
+        out += [q.strip() for q in QUOTED.findall(line)]
+        if line.strip().startswith("|"):
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if cells and 2 <= len(cells[0]) <= 20 and not REJECT_MARK.search(cells[0]):
+                out.append(cells[0])
+    seen, uniq = set(), []
+    for w in out:
+        w = w.strip(" *`")
+        if w and w not in seen and not w.startswith("---"):
+            seen.add(w)
+            uniq.append(w)
+    return uniq
+
+
+def likes_numbers(text):
+    """抽出文本里所有「N 赞」的数字原样（含万）。"""
+    return [(m.group(1) + ("万" if m.group(2) else "")) for m in LIKES.finditer(text)]
+
+
+def table_numbers(text):
+    """火力表里出现过的所有数字原样（含万）。表里「加权赞 5,626」把赞写在前面，
+    只认「N 赞」会把真数字误判成瞎编，所以这一侧放宽到全部数字。"""
+    return {m.group(1) + ("万" if m.group(2) else "")
+            for m in re.finditer(r"([0-9][0-9,\.]*)\s*(万)?", text) if m.group(1)}
 
 
 AUDIT_HEADINGS = ["产品卡", "证据行", "合规", "Claim Ledger", "闸门", "数据缺口", "丑话"]
@@ -100,6 +145,9 @@ def main():
                     help="只有单平台证据时，检查跨平台措辞")
     ap.add_argument("--observational", action="store_true",
                     help="火力表为观察级时，检查「实测最火」类表述")
+    ap.add_argument("--fire-table", metavar="文件", nargs="+",
+                    help="本轮材料：火力表（④段产出），可再跟本轮样本表。"
+                         "给了就核对证据行里的赞数是不是本轮的数字，不是模板或瞎编的")
     args = ap.parse_args()
 
     text = open(args.file, encoding="utf-8").read()
@@ -126,6 +174,32 @@ def main():
         hit, _ = find(copy_text, UNVERIFIED)
         if hit:
             hard.append(f"观察级火力表却宣称实证（④段）：{'、'.join(hit)}")
+
+    # ⑤闸〇 声明落地：台账里判了驳回／未核实的说法，不许出现在会发出去的文案里
+    for claim in rejected_claims(audit_text):
+        if claim in copy_text:
+            hard.append(f"无证据声明进了文案（⑤闸〇）：台账判「{claim}」不可用，文案里仍在说")
+
+    # ⑥ 来源可点：证据行的赞数必须来自本轮火力表
+    if PLACEHOLDER.search(text):
+        hard.append("模板占位符原样抄进了交付物（⑥来源可点）："
+                    + "、".join(sorted(set(PLACEHOLDER.findall(text)))[:3])
+                    + "；占位符不是数据，必须换成本轮火力表算出来的数字")
+    if TEACH_NOTE in text:
+        hard.append("把模板的教学注解也抄进了交付物（⑥来源可点）：「" + TEACH_NOTE + "」")
+
+    used = likes_numbers(text)
+    demo = sorted({n for n in used for d in DEMO_NUMBERS if n.startswith(d) or d.startswith(n)})
+    if demo:
+        hard.append("证据行抄了模板／参考册的示范赞数（⑥来源可点）：" + "、".join(demo))
+    if args.fire_table:
+        table = "\n".join(open(f, encoding="utf-8").read() for f in args.fire_table)
+        table_nums = {n.replace(",", "") for n in table_numbers(table)}
+        orphan = sorted({n for n in used if n.replace(",", "") not in table_nums} - set(demo))
+        if orphan:
+            hard.append("证据行的赞数指不回本轮材料（⑥来源可点）：" + "、".join(orphan))
+    elif used:
+        soft.append("没给 --fire-table，证据行的 " + str(len(used)) + " 个赞数只能人工核对是否来自本轮")
 
     missing = [name for name, keys in REQUIRED.items() if not any(k in text for k in keys)]
     if missing:

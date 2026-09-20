@@ -75,6 +75,25 @@ def test_no_stale_numbers_elsewhere():
         check(f"{gate}的数字没有被别处重抄（「{phrase}」）", not hits, "出现在 " + ", ".join(hits))
 
 
+def test_template_has_no_real_numbers():
+    """模板页不许带真赞数——模型会照抄成别的产品的「证据」。
+
+    2026-09-19 盲评实测：copy-package.md 里的示范数字（9,725 赞、约 181.8 万赞）
+    被写手原样抄进了防脱、猫粮两份不相干的交付物，当成本产品的证据。
+    所以模板里的数字位一律写占位符，真数字只能来自本轮火力表。
+    """
+    tpl = ROOT / "viral-copy-forge" / "templates" / "copy-package.md"
+    text = tpl.read_text(encoding="utf-8")
+    nums = re.findall(r"[0-9][0-9,\.]*\s*万?\s*赞", text)
+    check("copy-package.md 里没有具体赞数", not nums, "还留着 " + "、".join(nums))
+    check("copy-package.md 用了占位符", "〔赞数·占位〕" in text)
+    fire = (ROOT / "viral-copy-forge" / "templates" / "fire-table.md").read_text(encoding="utf-8")
+    check("fire-table.md 声明了自己的数字只是示范", "只作格式示范" in fire)
+    skill = SKILL.read_text(encoding="utf-8")
+    check("SKILL ⑤ 有闸〇 声明落地", "闸〇 · 声明落地" in skill)
+    check("闸〇 排在闸一前面", skill.index("闸〇 · 声明落地") < skill.index("闸一 · 锚点与刺点"))
+
+
 def rows(spec_rows, platform="xiaohongshu"):
     out = []
     for i, (likes, tags, days_ago) in enumerate(spec_rows):
@@ -168,6 +187,7 @@ def test_examples_still_reproduce():
 if __name__ == "__main__":
     print("闸门一致性测试")
     for fn in (test_numbers_match_skill, test_no_stale_numbers_elsewhere,
+               test_template_has_no_real_numbers,
                test_gate_behaviour, test_examples_still_reproduce):
         print(f"\n{fn.__doc__.splitlines()[0]}")
         fn()
