@@ -109,6 +109,20 @@ def main():
                                  ledger + "\n## 合规警示\n「5% 米诺地尔」无备案不可用；不宣称生发"))
     check("驳回的说法只留在合规段不判死", code == 0, out)
 
+    ledger2 = "\n## Claim Ledger\n- #1：「39℃恒温发热科技，比普通棉暖3倍」→ 厂家宣传语 → 状态：待补\n"
+    code, out = run(GOOD.replace("## 合规警示", ledger2 + "\n## 合规警示")
+                        .replace("标题：第 28 天，", "标题：39℃恒温科技，第 28 天，"))
+    check("长句声明被改头换面，数字卖点照样判硬伤", code == 1 and "「39℃」" in out, out)
+    ledger3 = "\n## Claim Ledger\n| 5% 米诺地尔 | 客服口述 | 无备案 | 驳回 |\n"
+    code, out = run(GOOD.replace("## 合规警示", ledger3 + "\n## 合规警示")
+                        .replace("标题：第 28 天，", "标题：95%的人没注意，第 28 天，"))
+    check("「95%」不算撞上被驳回的「5%」", "闸〇" not in out, out)
+    code, out = run(GOOD.replace("## 合规警示\n不宣称生发", "## 合规警示\n「39℃恒温发热科技」为厂家宣传语，无检测报告背书；不宣称生发")
+                        .replace("标题：第 28 天，", "标题：39℃恒温，第 28 天，"))
+    check("台账换了措辞（宣传语／无检测报告）也算驳回", code == 1 and "闸〇" in out, out)
+    tl = lint.title_lines("### 标题主推\n**「领口无骨缝，一穿就喊软」｜穿了 3 天不扎了**\n")
+    check("「前半」｜后半 的标题，后半也算进标题", tl and "3 天" in tl[0], tl)
+
     code, out = run(GOOD.replace("1,138 赞", "〔赞数·占位〕"))
     check("占位符抄进交付物判硬伤", code == 1 and "占位符" in out, out)
     code, out = run(GOOD.replace("标题：第 28 天，", "标题：本例为教学示范，第 28 天，"))
@@ -139,6 +153,33 @@ def main():
 
     code, out = run(GOOD.replace("1,138 赞", "1138 赞"), "--fire-table", table)
     check("同一个数字漏写千分位也算指得回", code == 0, out)
+
+    print("\n9-21 修的误判与新闸：序数、书名号、批注、照抄模板、标题识别、行号。")
+    code, out = run(GOOD.replace("发缝变宽的第 3 年", "第一次发现发缝变宽"))
+    check("「第一次」是序数，不算极限词", code == 0, out)
+    code, out = run(GOOD.replace("发缝变宽的第 3 年", "全城第一名的发缝"))
+    check("「第一名」仍然判极限词", code == 1 and "第一" in out, out)
+    code, out = run(GOOD.replace("发缝变宽的第 3 年", "长出第一缕绒毛"))
+    check("「第一缕」是序数修辞，不算极限词", code == 0, out)
+    code, out = run(GOOD.replace("> 发缝变宽的第 3 年，我开始每周拍一张头顶。",
+                                 "> 那篇《只认100%纯棉真的不够》我也看过。"))
+    check("书名号里引的别人标题不算极限词", code == 0, out)
+    code, out = run(GOOD.replace("每周拍一张头顶。", "每周拍一张头顶（A，痛点具象 1,138 赞）。"))
+    check("正文夹写法批注判硬伤", code == 1 and "写法批注" in out, out)
+    code, out = run(GOOD.replace("每周拍一张头顶。", "每周拍一张头顶（真的）。"))
+    check("普通口语括号不算批注", code == 0, out)
+    sample = [t for t in lint.template_sentences() if len(t) >= 8][0]
+    code, out = run(GOOD.replace("我开始每周拍一张头顶", sample))
+    check("照抄模板示范句判硬伤", code == 1 and "示范句" in out, out)
+    check("模板示范句里不再夹批注", all("（" not in t for t in lint.template_sentences()))
+    main_title = GOOD.replace("## 标题\n标题：第 28 天，我把每周一张的照片排了出来（主推）",
+                              "## 标题主推\n**「我把照片排了出来给你们看」**")
+    code, out = run(main_title)
+    check("「」写法的主推标题也查锚点", code == 1 and "标题缺锚点" in out, out)
+    code, out = run(main_title.replace("「我把", "「第 28 天，我把") + "\n## 备选留档\n1. 「换个角度写写看吧」\n")
+    check("备选留档不查锚点", code == 0, out)
+    code, out = run(GOOD.replace("我开始每周拍一张头顶", "我开始用全网最好的精华"))
+    check("硬伤带行号", "第 7 行" in out, out)
 
     print("\n分段函数本身。")
     copy_text, audit_text = lint.split_audit(GOOD)

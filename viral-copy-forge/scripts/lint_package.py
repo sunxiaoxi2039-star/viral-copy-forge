@@ -13,6 +13,7 @@
 """
 
 import argparse
+import pathlib
 import re
 import sys
 
@@ -36,11 +37,23 @@ ANCHOR = re.compile(r"[0-9０-９]|第[一二三四五六七八九十]|天|元|�
 MANUAL = ["闸二 换品名死亡测试：品名换成竞品名后句子是否塌",
           "闸三 自评门四项打分，交付最高版",
           "闸四 洗稿判定：与竞品原文相似度",
-          "人味终检 8 类 AI 腔逐条改写",
+          "人味终检 8 类 AI 腔逐条改写（正文批注、照抄模板句已由机器判）",
           "来源可点：标签与句式确实指回火力表那几条（数字对不对已由 --fire-table 机器核）"]
 
 
 NEGATION = re.compile(r"(不|别|勿|非|禁|忌|避免|删除|改写|替换|规避)[^。；\n]{0,6}$")
+ORDINAL_OK = {"第一": "次天周步眼回遍期集章篇口批层缕根"}   # 「第一次」是序数，不是「第一名」
+
+
+def exempt(text, w, i):
+    """这一处命中是不是根本不算这个词：序数用法，或书名号里引的别人标题。"""
+    nxt = text[i + len(w):i + len(w) + 1]
+    if nxt and nxt in ORDINAL_OK.get(w, ""):
+        return True
+    line_end = text.find("\n", i)
+    before = text[text.rfind("\n", 0, i) + 1:i]
+    after = text[i:] if line_end < 0 else text[i:line_end]
+    return before.rfind("《") > before.rfind("》") and "》" in after
 
 
 def find(text, words):
@@ -53,7 +66,7 @@ def find(text, words):
     """
     hard, negated_only = [], []
     for w in words:
-        spots = [m.start() for m in re.finditer(re.escape(w), text)]
+        spots = [m.start() for m in re.finditer(re.escape(w), text) if not exempt(text, w, m.start())]
         if not spots:
             continue
         if all(NEGATION.search(text[max(0, i - 8):i]) for i in spots):
@@ -63,7 +76,7 @@ def find(text, words):
     return hard, negated_only
 
 
-REJECT_MARK = re.compile(r"(驳回|未核实|无证据|未备案|待补|无报告|查无|存疑)")
+REJECT_MARK = re.compile(r"(驳回|未核实|无证据|未备案|待补|无报告|无检测|查无|存疑|宣传语|无背书|不作效果承诺)")
 QUOTED = re.compile(r"[「『\"“]([^」』\"”\n]{2,20})[」』\"”]")
 LIKES = re.compile(r"([0-9][0-9,\.]*)\s*(万)?\s*赞")
 PLACEHOLDER = re.compile(r"〔[^〕\n]*占位[^〕\n]*〕")
@@ -94,6 +107,33 @@ def rejected_claims(audit_text):
             seen.add(w)
             uniq.append(w)
     return uniq
+
+
+NUM_CLAIM = re.compile(r"[0-9]+(?:\.[0-9]+)?\s*(?:%|％|℃|度|倍|克|g|mg|小时|天)")
+
+
+def claim_fragments(claim):
+    """一条被驳回的说法拆成几块去查：整句、逗号切开的短句（≥4 字）、带单位的数字卖点。
+
+    台账常写长句「39℃恒温发热科技，比普通棉暖3倍」，文案却改头换面成「39℃恒温科技」；
+    只比整句会漏，所以数字卖点（39℃ / 3倍 / 5%）单独成块——这类数字换个说法照样是那条声明。
+    """
+    frags = [claim]
+    frags += [p.strip() for p in re.split(r"[，,、；;。/]", claim) if len(p.strip()) >= 4]
+    frags += [m.group(0).replace(" ", "") for m in NUM_CLAIM.finditer(claim)]
+    seen, out = set(), []
+    for f in frags:
+        if f and f not in seen:
+            seen.add(f)
+            out.append(f)
+    return out
+
+
+def fragment_in(frag, text):
+    """数字块要求前面不是数字（「95%」里不算有「5%」）。"""
+    if NUM_CLAIM.fullmatch(frag):
+        return re.search(r"(?<![0-9.])" + re.escape(frag), text.replace(" ", "")) is not None
+    return frag in text
 
 
 def likes_numbers(text):
@@ -129,12 +169,79 @@ def split_audit(text):
     return "\n".join(copy_parts), "\n".join(audit_parts)
 
 
+def sections(text):
+    """逐行给出 (行号, 所在小节标题, 行)。行号从 1 起，和编辑器一致。"""
+    head = ""
+    for n, line in enumerate(text.splitlines(), 1):
+        m = re.match(r"^#{1,6}\s*(.+)$", line.strip())
+        if m:
+            head = m.group(1)
+        yield n, head, line
+
+
 def title_lines(text):
+    """「标题：xxx」一行，或「标题主推」小节下用「」括起来的那一条。
+
+    模型写的交付物大多是后一种，只认前一种等于标题检查形同虚设。
+    备选留档不发出去，不查。
+    """
     out = []
-    for line in text.splitlines():
+    for _, head, line in sections(text):
         s = line.strip().lstrip("#").strip()
         if re.match(r"^(标题|主推标题)[:：]", s):
             out.append(s.split("：", 1)[-1].split(":", 1)[-1].strip())
+        elif "标题" in head and "备选" not in head and not s.startswith(("—", "(", "（", "#")):
+            m = re.match(r"^(?:[0-9]+[.、]\s*)?\**「([^」\n]{4,})」", s)
+            if m:
+                rest = s[m.end():].strip("* ")
+                # 「前半」｜后半 这种写法，后半也是标题的一部分，锚点和违禁都要一起查
+                out.append(m.group(1) + (rest if rest.startswith(("｜", "|")) else ""))
+    return out
+
+
+def where(text, word):
+    """硬伤指路：这个词在文案段第一次裸出现的行号和那一行，给修复轮照着改。"""
+    for n, head, line in sections(text):
+        if any(k in head for k in AUDIT_HEADINGS):
+            continue
+        i = line.find(word)
+        if i >= 0 and not exempt(line, word, i):
+            return f"第 {n} 行「{line.strip()[:40]}」"
+    return ""
+
+
+PASTE_SECTIONS = ["正文", "口播"]
+ANNOTATION = re.compile(r"[（(](?:[AIDA][，,]|[^）)\n]*(?:句式|赞|痛点|人格背书|钩子|暗踩|规避|连载仪式|"
+                        r"实证|说真话体|反转起手|证据|火力|公式))[^）)\n]*[）)]")
+
+
+def annotated_lines(text):
+    """正文／口播里用户会直接复制发出的句子（> 开头），夹着写法批注的行。
+
+    批注是写给自己看的，发出去就是「这号在按公式写」的铁证，也是真人味
+    扣分的头号原因（9-19 盲评三道题正文句句带括号）。拆解一律挪进证据行。
+    """
+    out = []
+    for n, head, line in sections(text):
+        if line.strip().startswith(">") and any(k in head for k in PASTE_SECTIONS) \
+                and ANNOTATION.search(line):
+            out.append(n)
+    return out
+
+
+TEMPLATE = pathlib.Path(__file__).resolve().parents[1] / "templates" / "copy-package.md"
+
+
+def template_sentences():
+    """模板示范成稿里的每一句（≥8 字）。示范句是教格式的，照抄进交付物就是别人的话。"""
+    if not TEMPLATE.exists():
+        return []
+    out = []
+    for line in TEMPLATE.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if s.startswith(">") or s.startswith("「"):
+            s = re.sub(r"[（(][^）)\n]*[）)]", "", s.split("——")[0])
+            out += [p for p in re.split(r"[，。？！、：；「」>｜\s]+", s) if len(p) >= 8]
     return out
 
 
@@ -158,7 +265,8 @@ def main():
                          ("医疗越线（合规 §2）", MEDICAL), ("站外导流（合规 §3）", DRAIN)]:
         hit, negated = find(copy_text, words)
         if hit:
-            hard.append(f"{label}：{'、'.join(hit)}")
+            hard.append(f"{label}：" + "、".join(f"{w}（{where(text, w)}）" if where(text, w) else w
+                                              for w in hit))
         if negated:
             soft.append(f"{label}只出现在否定句里（如「不宣称…」），已放行，人工确认：{'、'.join(negated)}")
         a_hit, _ = find(audit_text, words)
@@ -177,8 +285,20 @@ def main():
 
     # ⑤闸〇 声明落地：台账里判了驳回／未核实的说法，不许出现在会发出去的文案里
     for claim in rejected_claims(audit_text):
-        if claim in copy_text:
-            hard.append(f"无证据声明进了文案（⑤闸〇）：台账判「{claim}」不可用，文案里仍在说")
+        hit = next((f for f in claim_fragments(claim) if fragment_in(f, copy_text)), None)
+        if hit:
+            hard.append(f"无证据声明进了文案（⑤闸〇）：台账判「{claim}」不可用，文案里仍在说「{hit}」"
+                        f"（{where(text, hit)}）——整句换掉，标题刺点也要换，不许只在闸门记录里写「未使用」")
+
+    # ⑥ 人味终检：会被直接复制发出的句子不许夹批注，不许照抄模板示范句
+    notes = annotated_lines(text)
+    if notes:
+        hard.append("正文／口播里夹着写法批注（⑥人味终检）：第 " + "、".join(map(str, notes[:8]))
+                    + " 行；括号里的公式名和赞数挪进证据行，成稿要能原样复制发出")
+    copied = sorted({t for t in template_sentences() if t in copy_text})
+    if copied:
+        hard.append("照抄了模板的示范句（⑥人味终检）：" + "、".join(f"「{t}」" for t in copied[:4])
+                    + "；示范句只教格式，换成本产品、本人设自己的话")
 
     # ⑥ 来源可点：证据行的赞数必须来自本轮火力表
     if PLACEHOLDER.search(text):
